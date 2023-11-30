@@ -5,7 +5,7 @@ n e inverta a ordem dos elementos armazenados nesse vetor.
 
 #include <stdio.h>
 
-int inverter(int a){
+int inverter( int a){
 int n[a];
 int i;
 
