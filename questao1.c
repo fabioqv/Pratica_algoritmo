@@ -4,21 +4,27 @@ n e inverta a ordem dos elementos armazenados nesse vetor.
 */
 
 #include <stdio.h>
-int main() {
-    int x;
-    int i;
 
-    printf("Informe quantos valores pretende inserir \n");
-        scanf("%d", &x);
-    int n[x];
+int inverter(int a){
+int n[a];
+int i;
 
-    for (i = 0; i < x; i++){
+for (i = 0; i < a; i++){
         printf("Informe o %do valor \n", i+1);
             scanf("%d", &n[i]);
     }
 
-    for (i = x; i > 0; i--){
+    for (i = a; i > 0; i--){
         printf("%d \n", n[i-1]);
     }
-    return 0;
+
+}
+
+int main() {
+    int x;
+
+    printf("Informe quantos valores pretende inserir \n");
+        scanf("%d", &x);
+
+inverter(x);
 }
